@@ -6,9 +6,9 @@ function Navbar() {
       <h2>Tours TTC</h2>
       <ul className="nav-links">
         <li><Link to="/">Inicio</Link></li>
-        <li><Link to="/Nosotros">Nosotros</Link></li>
-        <li><Link to="/Servicios">Servicios</Link></li>
-        <li><Link to="/Contacto">Contacto</Link></li>
+        <li><Link to="/nosotros">Nosotros</Link></li>
+        <li><Link to="/servicios">Servicios</Link></li>
+        <li><Link to="/contacto">Contacto</Link></li>
       </ul>
     </nav>
   )

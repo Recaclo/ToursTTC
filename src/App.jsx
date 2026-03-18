@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import {Routes, Route } from 'react-router-dom'
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import Inicio from "./pages/Inicio"
@@ -17,6 +17,7 @@ function App() {
           <Route path="/" element={<Inicio />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path='/servicios' element={<Servicios/>}/>
+          <Route path="*" element={<Inicio />} />
         </Routes>       
         
       </main>
