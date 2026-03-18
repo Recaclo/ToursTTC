@@ -19,7 +19,7 @@ function Inicio() {
           Renta de autobuses para servicio ejecutivo, turismo,
           congresos y traslados especiales.
         </p>
-        <Link to="/cotizacion" className="btn-principal">Cotiza tu viaje</Link>
+        <Link to="/cotizar" className="btn-principal">Cotiza tu viaje</Link>
       </section>
 
       {/* SOBRE NOSOTROS */}
