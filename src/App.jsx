@@ -4,6 +4,7 @@ import Footer from "./components/Footer"
 import Inicio from "./pages/Inicio"
 import Nosotros from "./pages/Nosotros"
 import Servicios from "./pages/Servicios"
+import Cotizacion from "./pages/Cotizacion"
 
 import './App.css'
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Inicio />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path='/servicios' element={<Servicios/>}/>
+          <Route path="/cotizar" element={<Cotizacion />} />
           <Route path="*" element={<Inicio />} />
         </Routes>       
         

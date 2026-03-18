@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import fotoHero from '../assets/Planbus.jpeg';
 
 function Inicio() {
@@ -13,12 +14,12 @@ function Inicio() {
     <div className="inicio">
       {/* HERO con imagen local dinámica */}
       <section className="hero" style={heroStyle}>
-        <h1>Transportadora Turisticas De Costa a Costa y de Frontera a Frontera </h1>
+        <h1 className="titulo-gigante">Transportadora</h1>
         <p>
           Renta de autobuses para servicio ejecutivo, turismo,
           congresos y traslados especiales.
         </p>
-        <button className="btn-principal">Cotiza tu viaje</button>
+        <Link to="/cotizacion" className="btn-principal">Cotiza tu viaje</Link>
       </section>
 
       {/* SOBRE NOSOTROS */}
