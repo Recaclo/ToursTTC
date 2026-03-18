@@ -33,8 +33,14 @@ const handleSubmit = (e) => {
           <input type="text" name="origen" placeholder="Lugar de Origen" onChange={handleChange} />
           <input type="text" name="destino" placeholder="Destino Principal" onChange={handleChange} />
           <input type="number" name="pasajeros" placeholder="Número de personas" onChange={handleChange} />
-          <input type="date" name="salida" title="Fecha de salida" onChange={handleChange} />
-          <input type="date" name="regreso" title="Fecha de regreso" onChange={handleChange} />
+          <div className="campo-fecha">
+            <label>Fecha de Salida:</label>
+            <input type="date" name="salida" onChange={handleChange} />
+          </div>
+          <div className="campo-fecha">
+            <label>Fecha de Regreso:</label>
+            <input type="date" name="regreso" onChange={handleChange} />
+          </div>
         </div>
         <textarea 
           name="detalles" 
