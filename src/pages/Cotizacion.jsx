@@ -14,16 +14,16 @@ function Cotizacion() {
     setDatos({ ...datos, [e.target.name]: e.target.value });
   };
   const enviarWhatsApp = () => {
-  const mensaje = `Hola Tours TTC, me gustaría cotizar un viaje de ${datos.origen} a ${datos.destino} para ${datos.pasajeros} personas.`;
-  const url = `https://wa.me/5562094863?text=${encodeURIComponent(mensaje)}`;
-  window.open(url, '_blank');
-};
+    const mensaje = `Hola Tours TTC, me gustaría cotizar un viaje de ${datos.origen} a ${datos.destino} para ${datos.pasajeros} personas.`;
+    const url = `https://wa.me/5562094863?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, '_blank');
+  };
 
-const handleSubmit = (e) => {
-  e.preventDefault(); // Esto evita que la página se recargue
-  alert("Gracias por tu interés. En breve nos pondremos en contacto contigo.");
-  // Aquí podrías llamar a enviarWhatsApp() también si quieres
-};
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Esto evita que la página se recargue
+    alert("Gracias por tu interés. En breve nos pondremos en contacto contigo.");
+    // Aquí podrías llamar a enviarWhatsApp() también si quieres
+  };
 
   return (
     <div className="bloque">
@@ -42,15 +42,15 @@ const handleSubmit = (e) => {
             <input type="date" name="regreso" onChange={handleChange} />
           </div>
         </div>
-        <textarea 
-          name="detalles" 
+        <textarea
+          name="detalles"
           placeholder="Cuéntanos más (itinerario, movimientos locales, paradas intermedias...)"
           onChange={handleChange}
         ></textarea>
         <button type="submit" className="btn-principal">Enviar Solicitud</button>
         <button type="button" onClick={enviarWhatsApp} className="btn-whatsapp">Enviar por WhatsApp</button>
       </form>
-      
+
     </div>
   );
 }
