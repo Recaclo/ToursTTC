@@ -86,7 +86,7 @@ body {
 /* Grid de Servicios */
 .lista-servicios {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 25px;
   list-style: none;
   padding: 0;
@@ -148,7 +148,7 @@ body {
 
 .grid-mision-vision {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
@@ -221,7 +221,7 @@ body {
 
 .grid-servicios {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 30px;
   margin-top: 20px;
 }
